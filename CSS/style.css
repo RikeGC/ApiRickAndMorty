@@ -1,0 +1,28 @@
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  body header nav a img{
+    position: absolute;
+    height: 70px;
+    margin: 10;
+  }
+
+  body .fieldButton{
+    padding: 10px;
+  }
+
+  #tabela img{
+    height: 100px;
+    border-radius: 25px;
+  }
+
+  #tabela tbody tr:hover{
+    color:red;
+  }
