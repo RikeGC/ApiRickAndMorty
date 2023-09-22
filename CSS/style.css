@@ -44,7 +44,7 @@ body *{
 }
 
 /* Inicio List Links */
-#list-links ul{
+.list-links ul{
   border: 1px solid red;
   list-style: none;
   display: flex;
@@ -53,7 +53,7 @@ body *{
   padding: 24px 0px;
 }
 
-#list-links ul a{
+.list-links ul a{
   border: 1px solid red;
   text-decoration: none;
   display: flex;
