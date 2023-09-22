@@ -70,10 +70,11 @@ function AdicionarLinha(item) {
 }
 
 function NewPage(id){
-    alert("Funcionou "+id);
-    charX = id;
+    // alert("Funcionou "+id);
     // location.replace("../select.html");
-    example = document.cookie = "username="+charX;
-    alert(example);
-    window.sessionStorage.setItem(stor, charX);
+    // localStorage.setItem('teste', id);
+    // teste = localStorage.getItem('teste');
+    //teste = $.cookie('teste', id, { expires: 1 });
+    teste = Cookies.set('teste', id, {expires: 1});
+    alert('Funcionou ' + teste);
 }

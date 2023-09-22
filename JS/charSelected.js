@@ -1,6 +1,8 @@
 $(document).ready(function () {
-    example = document.cookie = "username=";
-    teste = window.sessionStorage.getItem(stor);
-    alert(example);
-    alert(teste);
+    teste = Cookies.get('teste');
+    if (Cookies.get('teste') != null){
+        $("#teste").append("Deu bom "+teste);
+    }else{
+        $("#teste").append("Deu ruim");
+    }
 });
