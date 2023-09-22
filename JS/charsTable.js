@@ -62,9 +62,18 @@ function ListarTodos(numPage) {
 function AdicionarLinha(item) {
     var novaLinha = $("<tr>");
     var col = '';
-    col += '<td><img src="' + item.image + '" alt="" srcset=""></td>';
-    col += '<td>' + item.name + '</td>';
+    col += '<td onclick="NewPage('+item.id+')"><img src="' + item.image + '" alt="" srcset=""></td>';
+    col += '<td onclick="NewPage('+item.id+')">' + item.name + '</td>';
     // col += '<td>' + item.Placa + '</td>';
     novaLinha.append(col);
     $("#tabela").append(novaLinha);
+}
+
+function NewPage(id){
+    alert("Funcionou "+id);
+    charX = id;
+    // location.replace("../select.html");
+    example = document.cookie = "username="+charX;
+    alert(example);
+    window.sessionStorage.setItem(stor, charX);
 }
