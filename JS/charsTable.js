@@ -28,9 +28,9 @@ function ListarTodos() {
     $("#tabela > tbody").empty();
     $.ajax({
         url: 'https://rickandmortyapi.com/api/character/?page=' + numPage,
-        type: 'get',
-        dataType: 'json',
-        contentType: 'application/json',
+        // type: 'get',
+        // dataType: 'json',
+        // contentType: 'application/json',
         success: function (dados) {
             dados.results.forEach(function (item) {
                 AdicionarLinha(item);
@@ -46,9 +46,9 @@ function ListarTodos(numPage) {
     $("#tabela > tbody").empty();
     $.ajax({
         url: 'https://rickandmortyapi.com/api/character/?page=' + numPage,
-        type: 'get',
-        dataType: 'json',
-        contentType: 'application/json',
+        // type: 'get',
+        // dataType: 'json',
+        // contentType: 'application/json',
         success: function (dados) {
             dados.results.forEach(function (item) {
                 AdicionarLinha(item);

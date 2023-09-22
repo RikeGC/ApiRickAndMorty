@@ -12,13 +12,14 @@
 
 body{
   background: var(--bg-url) no-repeat top center/cover fixed;
-  backdrop-filter: blur(10px);
+  
   height: 100vh;
 }
 
 body *{
   font-family: 'Patrick Hand SC', sans-serif, cursive;
   color: var(--text-color);
+  backdrop-filter: blur(10px);
 }
 
 /* Inicio do Container */
@@ -62,6 +63,7 @@ body *{
   padding: 16px 24px;
   font-size: 20px;
   transition: var(--transition);
+  background-color: rgba(50, 255, 125, 0.3);
 }
 
 /* Inicio Links Sociais */
