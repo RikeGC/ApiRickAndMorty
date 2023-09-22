@@ -1,82 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="./css/materialize.css" media="screen,projection" />
-
-    <link type="text/css" rel="stylesheet" href="./css/style.css">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ApiRickAndMorty</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <title>Wiki Rick And Morty</title>
 </head>
-
 <body>
-    <header>
-        <div class="cabeca">
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo">RICK</a>
-                    <ul id="nav-mobile" class="right hide-on-d-and-downme">
-                        <li><a href="table.html">Table</a></li>
-                        <li><a href="select.html">Select</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <div id="container">
+        <div id="logo">
+            <a href="./index.html"><img src="./assets/logo-rm.png" alt=""></a>
         </div>
-    </header>
-
-    <div class="corpo">
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"></a>
-            <a class="carousel-item" href="#one!"><img src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"></a>
-            <a class="carousel-item" href="#one!"><img src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"></a>
+        <div id="swtich">
         </div>
+        <div id="list-links">
+            <ul>
+                <li><a href="#">Personagens</a></li>
+                <li><a href="#">Localizações</a></li>
+                <li><a href="#">Episodios</a></li>
+            </ul>
+        </div>
+        <div id="social-links">
+                        <a href="https://github.com/rikegc" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/rikegc/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.facebook.com/rikegc/" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/rikegc/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </div>
+        <footer>
+            Desenvolvido por RikeGC | Com API do <a href="https://rickandmortyapi.com/">Rick And Morty</a>
+        </footer>
     </div>
-
-    <footer class="page-footer">
-        <div class="rodape">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">FanPage Rick And Morty</h5>
-                        <p class="grey-text text-lighten-4">This webpage created by Rikelme. 
-                            The Rick And Morty fan.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">My Links</h5>
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/rikegc/">Instagram</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/Rikelme.GC/">Facebook</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://github.com/rikegc">GitHub</a></li>
-                            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/rikelme-carneiro/">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2022 Copyright Text
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
-<script type="text/javascript" src="./js/materialize.js"></script>
-<script src="./js/nav.js"></script>
-<script src="./js/carousel.js"></script>
-<script src="./js/chars.js"></script>
-
 </html>

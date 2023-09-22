@@ -1,28 +1,88 @@
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+:root{
+  --bg-url: url(../assets/bg-mobile-2.jpg);
+  --text-color:white;
+  --transition: background 0.2s;
+}
 
-  body header nav a img{
-    position: absolute;
-    height: 70px;
-    margin: 10;
-  }
+body{
+  background: var(--bg-url) no-repeat top center/cover fixed;
+  backdrop-filter: blur(10px);
+  height: 100vh;
+}
 
-  body .fieldButton{
-    padding: 10px;
-  }
+body *{
+  font-family: 'Patrick Hand SC', sans-serif, cursive;
+  color: var(--text-color);
+}
 
-  #tabela img{
-    height: 100px;
-    border-radius: 25px;
-  }
+/* Inicio do Container */
+#container{
+  border: 1px solid red;
+  min-height: 500px;
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0px 24px;
+}
 
-  #tabela tbody tr:hover{
-    color:red;
-  }
+/* Inicio Logo */
+#container #logo{
+  border: 1px solid red;
+  text-align: center;
+  padding: 24px;
+}
+
+#container #logo a img{
+  border: 1px solid red;
+  width: 75%;
+}
+
+/* Inicio List Links */
+#list-links ul{
+  border: 1px solid red;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0px;
+}
+
+#list-links ul a{
+  border: 1px solid red;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-size: 20px;
+  transition: var(--transition);
+}
+
+/* Inicio Links Sociais */
+#social-links{
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 18px 0px;
+  font-size: 24px;
+}
+#social-links a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:16px;
+  transition: var(--transition);
+}
+
+/* Inicio */
+footer{
+  border: 1px solid red;
+  padding: 24px 0px;
+  text-align: center;
+}

@@ -75,6 +75,6 @@ function NewPage(id){
     // localStorage.setItem('teste', id);
     // teste = localStorage.getItem('teste');
     //teste = $.cookie('teste', id, { expires: 1 });
-    teste = Cookies.set('teste', id, {expires: 1});
+    teste = Cookies.set('teste', id, {expires: 0.01});
     alert('Funcionou ' + teste);
 }
