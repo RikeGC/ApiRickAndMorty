@@ -22,6 +22,18 @@ $(document).ready(function () {
     });
 
     ListarTodos();
+
+
+    $.ajax({
+        url: 'https://rickandmortyapi.com/api/character',
+        success: function (dados) {
+            dados.results.forEach(function (item) {
+                character = new Object(dados);
+            })},
+        error: function (erro) {
+            alert({ html: "Ocorreu algum Erro.\nTente novamente mais tarde. '+erro" });
+        }
+    })
 });
 
 function ListarTodos() {
