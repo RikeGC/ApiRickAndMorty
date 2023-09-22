@@ -66,6 +66,13 @@ body *{
   background-color: rgba(50, 255, 125, 0.3);
 }
 
+.list-links ul a img{
+  width: 75px;
+  margin: 0px 15px;
+  border-radius: 50%;
+  border: 1px solid greenyellow;
+}
+
 /* Inicio Links Sociais */
 #social-links{
   border: 1px solid red;
