@@ -2,12 +2,12 @@ $(document).ready(function () {
     urlBase = 'https://rickandmortyapi.com/api/character/?page=';
     ListarTodos();
     $("#btnNext").click(function () {
-        urlBase = page.next
+        urlBase = page.next;
         ListarTodos();
     });
     
     $("#btnPrev").click(function () {
-        urlBase = page.prev
+        urlBase = page.prev;
         ListarTodos();
     });
 });
@@ -43,4 +43,9 @@ function AdicionarLinha(item) {
     col += '<a href="#"><img src='+item.image+'>' + item.name + '</a>';
     novaLinha.append(col);
     $("#personagens > ul").append(novaLinha);
+}
+
+function NewPage(id){
+    teste = Cookies.set('teste', id, {expires: 0.01});
+    alert('Funcionou ' + teste);
 }
