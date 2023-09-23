@@ -4,11 +4,13 @@ $(document).ready(function () {
     $("#btnNext").click(function () {
         urlBase = page.next;
         ListarTodos();
+        window.scrollTo(0,0);
     });
     
     $("#btnPrev").click(function () {
         urlBase = page.prev;
         ListarTodos();
+        window.scrollTo(0,0);
     });
 });
 
