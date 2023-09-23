@@ -1,50 +1,38 @@
 $(document).ready(function () {
-    numPage = 1;
-    
-    if (numPage <= 1) {
-        $("#btnPrevious").attr("disabled","disabled");
-    };
-    
-    $("#btnPrevious").click(function () {
-        numPage--;
-        if (numPage <= 1) {
-            $("#btnPrevious").attr("disabled","disabled");
-        };
-        ListarTodos(numPage);
-    });
-    
-    $("#btnNext").click(function () {
-        numPage++;
-        if (numPage > 1) {
-            $("#btnPrevious").removeAttr("disabled","disabled");
-        };
-        ListarTodos(numPage);
-    });
-
+    urlBase = 'https://rickandmortyapi.com/api/character/?page=';
     ListarTodos();
-
-
-    $.ajax({
-        url: 'https://rickandmortyapi.com/api/character',
-        success: function (dados) {
-            dados.results.forEach(function (item) {
-                character = new Object(dados);
-            })},
-        error: function (erro) {
-            alert({ html: "Ocorreu algum Erro.\nTente novamente mais tarde. '+erro" });
-        }
-    })
+    $("#btnNext").click(function () {
+        urlBase = page.next
+        ListarTodos();
+    });
+    
+    $("#btnPrev").click(function () {
+        urlBase = page.prev
+        ListarTodos();
+    });
 });
 
 function ListarTodos() {
     $("#personagens > ul").empty();
     $.ajax({
-        url: 'https://rickandmortyapi.com/api/character/?page=' + numPage,
+        url: urlBase,
         success: function (dados) {
             dados.results.forEach(function (item) {
-                AdicionarLinha(item);})},
+                AdicionarLinha(item);
+                page = new Object(dados.info);
+                if (page.prev == null) {
+                    $("#btnPrev").attr("disabled","disabled");
+                }else{
+                    $("#btnPrev").removeAttr("disabled","disabled");
+                };
+                if (page.next == null) {
+                    $("#btnNext").attr("disabled","disabled");
+                }else{
+                    $("#btnNext").removeAttr("disabled","disabled");
+                };
+            })},
         error: function (erro) {
-            alert({ html: "Ocorreu algum Erro.\nTente novamente mais tarde. '+erro" });
+            alert({ html: 'Ocorreu algum Erro.\nTente novamente mais tarde.\n'+erro });
         }
     })
 }
