@@ -42,7 +42,8 @@ function ListarTodos() {
 function AdicionarLinha(item) {
     var novaLinha = $("<li>");
     var col = '';
-    col += '<a href="#"><img src='+item.image+'>' + item.name + '</a>';
+    col += '<a href="#"><img src='+item.image+'><div id="info"><h3>'+item.name+'</h3><p>'+item.species+'</p><p>'+item.status+'</p></div></a>';
+    
     novaLinha.append(col);
     $("#personagens > ul").append(novaLinha);
 }

@@ -23,7 +23,7 @@ body *{
 
 /* Inicio do Container */
 #container{
-  border: 1px solid red;
+  border: 1px solid black;
   min-height: 500px;
   width: 100%;
   max-width: 588px;
@@ -33,19 +33,19 @@ body *{
 
 /* Inicio Logo */
 #container #logo{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
   padding: 24px;
 }
 
 #container #logo a img{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 75%;
 }
 
 /* Inicio List Links */
 .list-links ul{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -53,8 +53,17 @@ body *{
   padding: 24px 0px;
 }
 
+.list-links ul li{
+  background-color: rgba(50, 255, 125, 0.2);
+  border-radius: 16px;
+  border: 2px solid greenyellow;
+}
+.list-links ul li:hover{
+  background-color: rgba(50, 255, 125, 0.1);
+}
+
 .list-links ul a{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -62,10 +71,39 @@ body *{
   padding: 16px 24px;
   font-size: 20px;
   transition: var(--transition);
-  background-color: rgba(50, 255, 125, 0.3);
 }
 
-.list-links ul a img{
+.list-links ul a ion-icon{
+  margin: 0px 16px 0px 0px;
+}
+
+#personagens ul li{
+  list-style: none;
+  background-color: rgba(50, 255, 125, 0.2);
+  border-radius: 16px;
+  border: 2px solid greenyellow;
+  margin: 16px 0px;
+}
+
+#personagens ul li:hover{
+  background-color: rgba(50, 255, 125, 0.1);
+}
+
+#personagens ul li a{
+  /* border: 1px solid red; */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+
+#personagens ul li a #info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#personagens ul li a img{
   width: 75px;
   margin: 0px 15px;
   border-radius: 50%;
@@ -74,7 +112,7 @@ body *{
 
 /* Inicio Botão */
 #buttons{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -98,9 +136,18 @@ body *{
   padding: 5px;
 }
 
+#buttons button:hover:enabled{
+  outline: 4px solid greenyellow;
+  background-color: teal;
+}
+#buttons button:active:enabled{
+  outline: 4px solid greenyellow;
+  background-color: teal;
+}
+
 /* Inicio Links Sociais */
 #social-links{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   padding: 18px 0px;
@@ -116,7 +163,7 @@ body *{
 
 /* Inicio */
 footer{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 24px 0px;
   text-align: center;
 }
