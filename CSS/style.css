@@ -56,10 +56,11 @@ body *{
 .list-links ul li{
   background-color: rgba(50, 255, 125, 0.2);
   border-radius: 16px;
-  border: 2px solid greenyellow;
+  border: 2px solid rgb(173, 255, 47, 0.5);
 }
 .list-links ul li:hover{
   background-color: rgba(50, 255, 125, 0.1);
+  border: 2px solid rgb(173, 255, 47, 1);
 }
 
 .list-links ul a{
@@ -81,12 +82,13 @@ body *{
   list-style: none;
   background-color: rgba(50, 255, 125, 0.2);
   border-radius: 16px;
-  border: 2px solid greenyellow;
+  border: 2px solid rgb(173, 255, 47, 0.5);
   margin: 16px 0px;
 }
 
 #personagens ul li:hover{
   background-color: rgba(50, 255, 125, 0.1);
+  border: 2px solid rgb(173, 255, 47, 1);
 }
 
 #personagens ul li a{
