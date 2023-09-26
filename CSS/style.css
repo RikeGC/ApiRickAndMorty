@@ -191,8 +191,8 @@ body *{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(0, 255, 191, 0.5);
-  border: 10px solid rgb(173, 255, 47, 1);
+  background-color: rgba(0, 167, 125, 0.7);
+  border: 5px solid rgb(173, 255, 47, 1);
   border-radius: 10%;
   padding: 30px 15px;
 }
@@ -200,11 +200,12 @@ body *{
   width: 50%;
   margin: 32px 24px;
   border-radius: 25%;
-  border: 5px solid greenyellow;
+  border: 5px solid rgb(173, 255, 47, 1);;
 }
 
 #personagem #especificacoes .perfil{
 }
+
 #personagem #especificacoes .nome, .local{
   display: flex;
   flex-direction: row;
