@@ -42,13 +42,13 @@ function ListarTodos() {
 function AdicionarLinha(item) {
     var novaLinha = $("<li>");
     var col = '';
-    col += '<a href="#"><img src='+item.image+'><div id="info"><h3>'+item.name+'</h3><p>'+item.species+'</p><p>'+item.status+'</p></div></a>';
+    col += '<a onclick="NewPage('+item.id+')"><img src='+item.image+'><div id="info"><h3>'+item.name+'</h3><p>'+item.species+'</p><p>'+item.status+'</p></div></a>';
     
     novaLinha.append(col);
     $("#personagens > ul").append(novaLinha);
 }
 
 function NewPage(id){
-    teste = Cookies.set('teste', id, {expires: 0.01});
-    alert('Funcionou ' + teste);
+    teste = Cookies.set('selecionado', id, {expires: 0.01});
+    window.location.replace("../personagem.html");
 }
