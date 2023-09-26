@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $("#especificacoes").hide();
+    $(".carregar").fadeOut(600);
     urlBase = 'https://rickandmortyapi.com/api/character/';
     id = Cookies.get('selecionado');
     PersonagemSelecionado(id);
@@ -6,7 +8,7 @@ $(document).ready(function () {
 });
 
 function PersonagemSelecionado(id) {
-    //$("#personagem").empty();
+    $("#especificacoes").fadeIn(1500);
     $.ajax({
         url: urlBase+id,
         success: function (dados) {

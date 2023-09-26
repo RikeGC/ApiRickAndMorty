@@ -184,6 +184,7 @@ body *{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 #personagem #especificacoes{
@@ -216,6 +217,9 @@ body *{
   padding: 10px 25px;
 }
 
+#personagem .carregar{
+  position: absolute;
+}
 
 /* Inicio Links Sociais */
 #social-links{

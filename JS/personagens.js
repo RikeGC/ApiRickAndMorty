@@ -14,6 +14,8 @@ $(document).ready(function () {
     });
 });
 
+
+
 function ListarTodos() {
     $("#personagens > ul").empty();
     $.ajax({
