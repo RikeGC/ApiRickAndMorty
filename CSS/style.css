@@ -1,27 +1,27 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --bg-url: url(../assets/bg-mobile-2.jpg);
-  --text-color:white;
+  --text-color: white;
   --transition: background 0.2s;
 }
 
-body{
+body {
   background: var(--bg-url) no-repeat top center/cover fixed;
   height: 100vh;
 }
 
-body *{
+body * {
   font-family: 'Patrick Hand SC', sans-serif, cursive;
   color: var(--text-color);
 }
 
 /* Inicio do Container */
-#container{
+#container {
   border: 1px solid black;
   min-height: 500px;
   width: 100%;
@@ -32,19 +32,19 @@ body *{
 }
 
 /* Inicio Logo */
-#container #logo{
+#container #logo {
   /* border: 1px solid red; */
   text-align: center;
   padding: 24px;
 }
 
-#container #logo a img{
+#container #logo a img {
   /* border: 1px solid red; */
   width: 75%;
 }
 
 /* Inicio List Links */
-.list-links ul{
+.list-links ul {
   /* border: 1px solid red; */
   list-style: none;
   display: flex;
@@ -53,7 +53,7 @@ body *{
   padding: 24px 0px;
 }
 
-.list-links ul li a{
+.list-links ul li a {
   /* border: 1px solid red; */
   text-decoration: none;
   display: flex;
@@ -67,17 +67,17 @@ body *{
   border-radius: 16px;
 }
 
-.list-links ul li a:hover{
+.list-links ul li a:hover {
   background-color: rgba(50, 255, 125, 0.3);
   border: 2px solid rgb(173, 255, 47);
 }
 
-.list-links ul a ion-icon{
+.list-links ul a ion-icon {
   margin: 0px 16px 0px 0px;
 }
 
 /* Inicio List Links inLine */
-.list-links-line ul{
+.list-links-line ul {
   /* border: 1px solid red; */
   list-style: none;
   display: flex;
@@ -87,7 +87,7 @@ body *{
   padding: 24px 0px;
 }
 
-.list-links-line ul li a{
+.list-links-line ul li a {
   /* border: 1px solid red; */
   text-decoration: none;
   display: flex;
@@ -101,16 +101,39 @@ body *{
   border-radius: 16px;
 }
 
-.list-links-line ul li a:hover{
+.list-links-left ul {
+  /* border: 1px solid red; */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0px;
+}
+
+.list-links-left ul li a {
+  /* border: 1px solid red; */
+  text-decoration: none;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding: 16px 24px;
+  font-size: 20px;
+  transition: var(--transition);
+  background-color: rgba(50, 255, 125, 0.5);
+  border: 2px solid rgb(173, 255, 47, 0.5);
+  border-radius: 16px;
+}
+
+.list-links-line ul li a:hover {
   background-color: rgba(50, 255, 125, 0.3);
   border: 2px solid rgb(173, 255, 47);
 }
 
-.list-links-line ul a ion-icon{
+.list-links-line ul a ion-icon {
   margin: 0px 16px 0px 0px;
 }
 
-#personagens ul li{
+#personagens ul li {
   list-style: none;
   background-color: rgba(50, 255, 125, 0.2);
   border-radius: 16px;
@@ -118,12 +141,12 @@ body *{
   margin: 16px 0px;
 }
 
-#personagens ul li:hover{
+#personagens ul li:hover {
   background-color: rgba(50, 255, 125, 0.1);
   border: 2px solid rgb(173, 255, 47, 1);
 }
 
-#personagens ul li a{
+#personagens ul li a {
   /* border: 1px solid red; */
   text-decoration: none;
   display: flex;
@@ -131,13 +154,13 @@ body *{
   padding: 24px;
 }
 
-#personagens ul li a #info{
+#personagens ul li a #info {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#personagens ul li a img{
+#personagens ul li a img {
   width: 75px;
   margin: 0px 15px;
   border-radius: 50%;
@@ -145,14 +168,14 @@ body *{
 }
 
 /* Inicio Botão */
-#buttons{
+#buttons {
   /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
 
-#buttons button{
+#buttons button {
   background-color: turquoise;
   border: 1px solid black;
   border-radius: 8px;
@@ -161,7 +184,7 @@ body *{
   padding: 5px;
 }
 
-#buttons button:disabled{
+#buttons button:disabled {
   background-color: grey;
   border: 1px solid black;
   border-radius: 8px;
@@ -170,43 +193,43 @@ body *{
   padding: 5px;
 }
 
-#buttons button:hover:enabled{
+#buttons button:hover:enabled {
   outline: 4px solid greenyellow;
   background-color: teal;
 }
-#buttons button:active:enabled{
+
+#buttons button:active:enabled {
   outline: 4px solid greenyellow;
   background-color: teal;
 }
 
 /* Page Parsonagem */
-#personagem{
+#personagem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
-#personagem #especificacoes{
+#personagem #especificacoes {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 167, 125, 0.7);
   border: 5px solid rgb(173, 255, 47, 1);
-  border-radius: 10%;
+  border-radius: 16px;
   padding: 30px 15px;
 }
-#personagem #especificacoes img{
+
+#personagem #especificacoes img {
   width: 50%;
   margin: 32px 24px;
   border-radius: 25%;
-  border: 5px solid rgb(173, 255, 47, 1);;
+  border: 5px solid rgb(173, 255, 47, 1);
+  ;
 }
 
-#personagem #especificacoes .perfil{
-}
-
-#personagem #especificacoes .nome, .local{
+#personagem #especificacoes .nome,
+.local {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -214,32 +237,40 @@ body *{
   padding: 10px 25px;
 }
 
-#personagem .episodios{
+#personagem .episodios {
   padding: 10px 25px;
 }
 
-#personagem .carregar{
+#carregamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#carregamento .carregar {
   position: absolute;
 }
 
 /* Inicio Links Sociais */
-#social-links{
+#social-links {
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   padding: 18px 0px;
   font-size: 24px;
 }
-#social-links a{
+
+#social-links a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:16px;
+  padding: 16px;
   transition: var(--transition);
 }
 
 /* Inicio */
-footer{
+footer {
   /* border: 1px solid red; */
   padding: 24px 0px;
   text-align: center;
